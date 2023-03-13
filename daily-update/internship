@@ -1,0 +1,399 @@
+//12/02/2023
+--------------------------------------------------------------
+//using cmd
+//create venev
+//virtual enviroinment
+
+venve\script\activate.bat
+piplist
+pip install flask
+
+--------------------------------------------------------------
+
+//we should import the flask
+
+//by using the notepad
+
+s1 python3
+form Flask import Flask
+app=Flask(__name__)
+@app.rout('/')
+def welcome():
+return"this is my first flask"
+app.run()
+
+--------------------------------------------------------------
+
+//here the function name shoul be different for every functions
+//app.run is used for running the peogramm
+
+//name the note pad as app.python
+//app.py
+
+s1 python3
+form flask import Flask,request
+app=flask(__name__)
+
+@app.rout('/potato')
+def welcome():
+return"this is my first flask"
+@app.rout('/')
+def root():
+return"this is my second page"
+@app.rout('/bob')
+def bob():
+return"this is the bob page"
+
+app.run()
+
+--------------------------------------------------------------
+
+//getting the request
+//request for the thing is get or post
+
+//include by
+@app.rout('/method',methods=['GET','POST'])
+def method():
+if request.method=='POST':
+return"you are using the post request"
+else:
+return"you may ue the get request"
+//get and post requests are the type of requests in http
+
+--------------------------------------------------------------
+//hierarchy
+// hierarchy might be containg the basics of the web page
+//static for photos
+//templates for templates
+//venve for virtual enviroinment
+//app.py for python
+
+--------------------------------------------------------------
+
+//save the templates as html file
+<!doctype html>
+
+<p>this is my root page</p>
+
+//we should import another module called render_template
+//on th app.py
+@app.rout('/')
+def root ():
+return render_template("indrx.html")
+
+//any thing added to the index willl changes the wrb page
+
+
+//index.html
+<!doctype html>
+
+<p>this is my root page</p>
+
+<p>this is proof im not lying</p>
+
+//later on we are just adding
+//head
+//title
+//etc....
+
+//index.html
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+</head>
+<p>this is my root page</p>
+
+<p>this is proof im not lying</p>
+
+--------------------------------------------------------------
+
+//create a css file in static
+//static is flask director hierarchy
+//save as style.css
+///create the html to header
+//index html
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+</head>
+<h1>this is my root page</h1>
+
+<p>this is proof im not lying</p>
+
+
+//style.css
+
+h1{
+text-align:center;
+}
+//without contact how does a idex.html - style.css
+//link them to a style
+
+//index.html
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+    <linkrel="stylesheet"type="text /css"href="{{url_for('static',filename='style.css')}}">
+</head>
+<h1>this is my root page</h1>
+
+<p>this is proof im not lying</p>
+
+//we can nest the static file and must be mentioned there in index.html
+//if the file name is css_style
+//index.html
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+    <linkrel="stylesheet"type="text /css"href="{{url_for('static',filename='css_style/style.css')}}">
+</head>
+<h1>this is my root page</h1>
+
+<p>this is proof im not lying</p>
+// now we chek the terminal
+//the result web page will show the head at ccentre
+//include body in index.html
+//index.html
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+    <linkrel="stylesheet"type="text /css"href="{{url_for('static',filename='css_style/style.css')}}">
+</head>
+<h1>this is my root page</h1>
+
+<body>
+    <h1>this is proof im not lying</h1>
+</body>
+
+//the p tag is again assigned as h1 tag thus the body also assigned to the center
+
+
+
+//again the h1 is convertwd to a paragraph... hence for the class main...
+
+//adding templateshe class
+
+//style.css
+
+h1{
+text-align:center;
+}
+
+.main{
+padding-left:100px;
+padding=right:100px;
+text-align:left;
+border:10px solid blue;
+}
+
+//tell the body tag to use the main
+
+//index.html
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+    <linkrel="stylesheet"type="text /css"href="{{url_for('static',filename='css_style/style.css')}}">
+</head>
+<h1>this is my root page</h1>
+
+<body class='main'>
+    <p>this is proof im not lying</p>
+</body>
+
+--------------------------------------------------------------
+
+//create a form using the flask
+
+//index.html
+//style.css
+//app.py
+
+*/index.html/*
+
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+    <linkrel="stylesheet"type="text /css"href="{{url_for('static',filename='css_style/style.css')}}">
+</head>
+<h1>this is my root page</h1>
+
+<body>
+    <div>
+        <p>please enter your name</p>
+        <form class="pure-form" method="POST" action="/">
+            name:<br>
+            <input type="text" name="username">
+            <button type="submit" class="pure-button pure-button-primary" value="submit">sunmit</button>
+        </form>
+    </div>
+</body>
+//whem the user name is gotthe user name should be accepted by the app.py
+
+//app.py
+
+s1 python3
+form flask import Flask,request
+app=flask(__name__)
+
+@app.rout('/',method=['GET','POST'])
+def rootpage():
+name=''
+if request.method=='POST'and 'username'in request.form:
+name= request.form.get('username')
+return render_template("index.html",name=name)
+
+app.run()
+
+--------------------------------------------------------------
+
+
+//HOW TO CAPTURE the VALUE OF name
+//add some python code inside the index.html
+
+//index.html
+
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+    <linkrel="stylesheet"type="text /css"href="{{url_for('static',filename='css_style/style.css')}}">
+</head>
+<h1>this is my root page</h1>
+
+<body>
+    <div>
+        <p>please enter your name</p>
+        <form class="pure-form" method="POST" action="/">
+            name:<br>
+            <input type="text" name="username">
+            <button type="submit" class="pure-button pure-button-primary" value="submit">sunmit</button>
+        </form>
+    </div>
+    (% if name %)
+    <p>welcome to my site{(name)}</p>
+    (% endif %)
+</body>
+
+--------------------------------------------------------------
+
+//my practice.......
+//app.py
+
+s1 python3
+form flask import Flask,request
+app=flask(__name__)
+
+@app.rout('/',method=['GET','POST'])
+def rootpage():
+name=''
+city=''
+email=''
+if request.method=='POST'and 'username'in request.form:
+name= request.form.get('username')
+return render_template("index.html",name=name)
+city=request.form.get('cityname')
+return render-template("index.html",city=city)
+email=request.form.get('emailid')
+return render_template("index.html",email=email)
+app.run()
+
+//index.html
+
+<!doctype html>
+
+<head>
+    <title>welcome flask</title>
+    <linkrel="stylesheet"type="text /css"href="{{url_for('static',filename='css_style/style.css')}}">
+</head>
+<h1>this is my root page</h1>
+
+<body>
+    <div>
+        <p>please enter your name</p>
+        <form class="pure-form" method="POST" action="/">
+            name:<br>
+            <input type="text" name="username">
+            <input type="text" city="cityname">
+            <input type="text" email="emailid">
+            <button type="submit" class="pure-button pure-button-primary" value="submit">sunmit</button>
+        </form>
+    </div>
+    (% if name %)
+    <p>welcome Mr/Mrs/Miss{(name)}</p>
+    <p>your city is {(city)}</p>
+    <p>your mail is {(email)}</p>
+    (% endif %)
+</body>
+
+--------------------------------------------------------------
+
+
+
+//BMI calculator.....................
+//weight in kg and height in cm
+//make a directory calle BMI
+//inside a bmi create a python3 venve venve
+//venve/script/activate.bat
+//pip install flash
+//save as app.py
+
+
+//app.py
+
+#!python3
+
+from flask import flask,render_template,request
+app=flask(__name__)
+
+@app.rout("/",methods=['GET','POST'])
+def index():
+return_template(bmi_cal.html)
+
+app.run()
+
+//create a new file and save bmi_cal.html templates
+//
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+
+//13/02/2023
+
+//new session
+//json grand
+
+//crud operations
+
+/c-create
+/r-read
+/u-update
+/d-delete
+
+
+//saved with .json extension
+//collection of dictionary
+
+//json file
+//3 method in json
+read-->json.load()
+write-->json.dumb(data_to_be_dumb,filename,[indent=4])
+
+//assignment
+//crud with json
+
+////////////////////////////////////////////////////////////////////////////
+----------------------------------------------------------------------------
+....... 
+https://us02web.zoom.us/j/6476476400
+....... 
+----------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////
+https://937269516597.signin.aws.amazon.com/console
+////////////////////////////////////////////////////////////////////////////

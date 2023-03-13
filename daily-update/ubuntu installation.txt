@@ -1,0 +1,55 @@
+https://www.freecodecamp.org/news/how-to-dual-boot-windows-10-and-ubuntu-linux-dual-booting-tutorial/
+
+https://wiki.tactii.com/ubuntu-installation-and-issues-1.html
+
+
+//Download Rufus
+    Rufus - https://rufus.ie/
+
+//Download Ubuntu
+    https://ubuntu.com/
+
+// Windows + R and Type msinfo32
+    Check BIOS type
+    Legacy / UEFI
+
+//SD Card Formatter
+    https://www.sdcard.org/downloads/formatter/
+
+//Unzip SD Card Formatter and Install the setup
+
+//Open SD Card Formatter
+
+//Select SD Card / Pendrive Click Format
+
+//rufus enter
+.....
+
+
+
+
+//shutdown
+//insert usb which the rufus setuped
+//press f12 button
+//ubuntu start install package
+
+//install ubuntu
+//momory allocation
+
+//sda4 
+1934
+use as ext4 general system
+mount point /
+
+//
+location
+
+//user name
+password...
+etc...
+
+//install...
+
+
+// installing..
+ 

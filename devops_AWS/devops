@@ -1,0 +1,117 @@
+merge the project to a dev
+feat - new ->
+then merge that with the prod
+//
+create a new pull request in the git hub
+
+dev <- feat-new
+prod <- feat-new
+
+//log in to the aws
+create a account 
+username
+//i want to create an IAM user
+//give the password 
+//next
+.
+.
+//create a user
+//download the csv and send it to the new user
+//username and password //confedential
+
+//we need access key and secret key 
+//highly confedential keys 
+//mut be in a private folder
+//
+
+command line interface
+// add type the tag
+//create the access key and the secret key
+
+//create the policies
+//
+//access the server in a respected location or specific location
+//read and write operation
+//check the region
+//
+//north vergania
+..
+.
+ec2 access..
+ec2 instandt connet is mandatory
+.
+.
+//go for the requested region
+.
+us-east-1
+.
+add tags
+.
+enter the key
+///
+
+//
+
+naming the policy 
+..
+at last click the create the policy
+.
+.
+.
+//the policy has been created
+.
+.
+add the user group for the group
+..
+
+..
+repositary 
+aws-policy-costum
+//
+//
+/
+
+.
+.
+
+
+..
+..
+//how to deploy a new app
+connect to the prod
+//clone the repositary
+.
+.
+//test first
+.
+.
+//chheck the port is running or not
+.
+.
+bu using the sudo code..
+//allways better to go to an alternating port
+.
+//conda activate..
+//run the requirements...
+//pip install..
+//check the fie..
+//unblock the port on the aws..  portal.. -------------------------------------------------------
+/
+//
+/
+create the subdomain
+/
+
+using boto3 connect and count how many instants are running in region
+
+.
+create a ec2 deploy A SIMPLE FLASK
+.
+
+
+\\
+
+t2.micro
+
+
+deploying...

@@ -1,0 +1,53 @@
+EC2 is the amzon eastic cloud computing which provides a ground to make an app... 
+//it is just like the basement..
+develop and deploy applications faster..
+
+.
+.
+virtual servers
+.
+ Virtualizing servers makes it easy to reallocate resources and adapt to dynamic workloads.
+
+dynamic work load..??
+
+Dynamic workloads are an important component in hybrid cloud systems that require rapid 
+resource changes to address modern computing demands
+.
+.
+.
+.
+configure security
+Security configuration management is a process that involves adjusting the default 
+settings of an information system in order to increase security and mitigate risk
+.
+.
+//
+//
+To deploy an EC2 instance on Amazon Web Services (AWS), you can follow these general steps:
+
+>>Sign in to the AWS Management Console and navigate to the EC2 dashboard.
+
+1>>Click the "Launch Instance" button.
+
+2>>Choose an Amazon Machine Image (AMI) that best fits your requirements. You can select from a variety of pre-built images provided by AWS or upload your custom image.
+
+3>>Select an instance type that meets your computing and memory requirements.
+
+4>>Configure the instance details, such as the number of instances, network settings, and storage options.
+
+5>>Configure security group settings to allow access to your instance.
+
+6>>Review the instance details and launch it.
+
+7>>Choose an existing key pair or create a new one and download the private key to your local computer.
+
+8>>Connect to your instance using a terminal application and the private key you downloaded.
+
+    It's important to note that EC2 instances are charged on a per-hour basis, so be sure to monitor your usage 
+    and stop or terminate instances that are not in use to avoid unnecessary charges. Additionally, it's a best 
+    practice to configure security and network settings carefully to ensure that your instances are secure and 
+    only accessible to authorized users.
+.
+.
+//
+//

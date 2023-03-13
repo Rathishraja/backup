@@ -1,0 +1,200 @@
+26/02/2023
+
+//AWS POLICIES
+
+    USER CREATION
+        next
+    attach policies 
+        next
+    policies select
+        ec2 access
+        iam change password
+        tag.. refereance--region
+    create access key 
+        give command line interferance
+    description tag
+
+//security
+    security
+
+        deploying a app new 
+        costum tcp port 3011
+
+        http port 80
+        https port 4
+
+//policies
+    ec2 and ec2 instance connect..
+    string equals-specifiying the access
+    at last create a policy.
+
+//roles
+
+    creating the admin and super admin roles
+
+//user group
+    giving the admin access and super admin access
+    we can give the specific access
+
+//deploy 
+    connect to prod
+    clone the repo in cd tact/py.space
+    update the gsheet with unused port number
+    sudo lsof -i  tcp:3011
+    conda activate
+    run the requirements
+    python app.pyit will run with no error
+    stop the app later
+
+    .
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+27/02/2023
+//deploying  the flask app.. using the AWS
+    to connect to the remote system
+        connect to the prod.
+        lsofcd tactls
+        cd test
+        ls
+        clone the flask using the git clone command
+        conda activate py38--
+        cd sample flask
+        pip -r requirements
+        port chek
+        sudo lsof -i tcp:3011
+            no output
+        python app.py
+        public ip :3.86.75.45 
+            allow the port
+        app will be deployed
+
+//add the server to the nginix--
+        cd/etc/nginx/sites-enabled/
+        sudo nano tact2023
+        add the server
+        sudo service nginix reload
+//ad the sub domain 
+    cd sample flask demo
+    cd tact/py-space/nuvo
+    sudo nano rj.json
+    value is the public ip -"3.86.75.45"
+        2AWS  command
+    cd sample flask
+    nohup python app.py--
+    //stop running the port
+        kill the port
+        sudo kill-9 'sudo lsof -t -i:3011'
+
+//json crud
+    import system
+    import crud
+    print (str(sys.argv))
+    //create
+    //create a json file (.json)
+        dic={"name"=sys.argv[1],"city":sys.argv[2]}
+        print(dic)
+
+        #read 
+        f=open("jsoncrud.json")
+        data=json.load(f)
+        #converts the string format to the json object
+        print(data)
+
+        #data=json.dump(f)
+        
+        #converts the json object format to the string format
+        data["users"].append(dic)
+        f = open("jsoncrud.json", "w")
+        json.dump(data, f)
+
+        # update
+        # f = open ("jsoncrud.json", "w")
+        # for x in range(len(data["users"])):
+        # print("length of user", len(data["users"]))
+        if data['users'][x]["name"] == sys.argv[1]:
+        # data['users'][x]["city"]=sys.argv[2]
+        # print(data['users'][x])
+        # json.dump(data,f)
+
+
+    //crud operations:
+
+    c - create
+    r - read
+    u - update
+    d - delete
+
+    json --- collection of dictionaries
+
+    {
+        "key" :{
+        "name :"saru"   }
+    }
+
+    3 methods in json:
+        1. read() ---> json.load()
+        2. write() ---> json.dump(new_dict)
+        3. update() --> json.update(new_dict)
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+05/03/2023
+
+    //scrapping of details from website 
+        by using the selenium
+
+    conda enviroinment creation 
+        conda create -n py39 -y python=3.9
+    conda activation
+        conda activate py39
+
+ubuntu course 
+    rathish-done 
+    monisha-today/10PM
+    thejashri-credits pending
+    sivashree-credits pending
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+12/03/2023
+
+
+    from flask import Flask, render_template, request
+
+    app = Flask(__name__)
+
+    @app.route('/', methods = ['GET', 'POST'])
+    def home():
+
+        return render_template("index.html")
+
+    @app.route('/hello')
+    def index():
+        return 'hello world'
+
+    @app.route('/next', methods = ['GET', 'POST'])
+    def next():
+        if(request.method == 'POST'):
+            name        = request.form.get('name')
+            password    = request.form['pass']
+            print(name, password)
+        return 'this is the next page'
+
+
+    if(__name__ == '__main__'):
+        app.run(debug = True)
+    
+    
+    # name = "anitha" password = "root"
+
+spin time..
+
+
+
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------

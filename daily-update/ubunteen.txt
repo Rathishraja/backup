@@ -1,0 +1,282 @@
+//1
+
+uname -a            > what kernal is being
+pwd                 > current director path
+cd                  > navigation to a dictionary
+cd ..               > navigation out to a dictionary
+whoami              > will give the current user name
+mkdir               > to make a dictionary or a folder
+ls                  > list the files in a dictionary
+echo                > to print the statement on the terminal itself
+df(dislay function) > information about the disk space
+hiistory            > previous commands used
+
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+
+//2
+
+clear           > clear the terminal 
+du              > dictionary usage (in sub directiory)
+free            > available space in the disk
+man             > gives the manual of the particular function 
+date            > date-day-time
+cal             > callender
+cat             > shows the content in the file 
+rmdir           > remove the dictionary
+whatis command  > brief explaination of the command
+command --help  > mannual of the command
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//3
+
+ps              > process command. it is used to display information of the process running bcurrently
+w               > display the deatils of the user logged in
+cp              > copy the content from file to another file
+mv              > move the file 
+head-n          > print the n rows of data present on the top
+tail-n          > print the las n rows of a data
+grep * *        > search the specific word on the file
+file            > display the direction of the folder 
+rm              > removes the file
+exit            > exit the terminal
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//4
+
+gedit                   > to create a file
+zipfiles.zip_.txt _.txt > to zip a file
+unzip                   > to un zip a file
+wc-l                    > line count of the data 
+wc                      > word count of the data 
+user                    > user who currently logg in 
+top                     > display the running progress such that the usage of ram and cpu
+touch                   > creates the empty
+tac                     > display the content in the file in reverse order
+id                      > displays the user id
+comm                    > compare the files
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//5
+
+uptime                  > how long the system is been using
+zdump                   > print the current time in the specific timezone
+sudo apt-get update     > update thesystem
+git clone               > clone the repositary
+git status              > check the status of the repositary
+git add                 > add file need to push
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//6
+
+chmod commands.....
+
+//symbolic commands of different roles
+
+u is for user
+g is for group 
+o is for others
+a is for available
+
+// symbolic expression of three different permission 
+r is for read permission
+w is for write permission
+x is for execute permission
+
+//add single permission
+chmod u+r *filename*
+chmod a+w *filename*
+chmod g+r,a+w *filrname*
+
+//remove the permission
+chmod u-rx *filename*
+//filehasn't access to open
+
+//agin giving the permission
+chmod u+x *filename*
+
+// giving permissionfor all roles
+chmod a+x *filename*
+
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//7
+
+cd commands
+
+to navigate the root directory , "cd/"
+
+to navigate our home directory or get out of the directiory "cd" or "cd~"
+to navigate one directory out "cd.."
+to navigate the previous directory "cd-"
+"cd~/desktop"will navigate us to desktop
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//8
+//chown command
+
+permission of the particular file 
+
+chown bob *filename*/
+// new owner is specified 
+
+chown owner *filename*/
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//9
+//sudo su commands
+sudo su command requires the password
+to excigute the root previlages
+
+___________________________doesn't work properly____________________
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//10
+//mkdir and touch
+
+//create the directory
+mkdir filename
+//navigate into the file 
+
+//create the file
+touch filename.txt
+//open yhe text
+gedit filename.txt
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//11
+//pwd and copy and move
+
+// navigate of the file
+pwd
+// which gives the location of the file
+
+// to copy the file 
+cp filename /location
+
+// to move the file 
+mv filename /location
+
+//ctrl+r is back search
+//not used often
+
+whomi 
+//display the user name
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//12
+//grep
+
+//global regular expression print
+
+//search the specific word mostly used in the log file
+
+pip list | grep "bs4"
+
+//for file or folder
+
+grep "daily" daily/log
+
+grep-c "daily" daily/log
+
+//count of the word used
+
+grep-i "the word to search"
+
+//i will ignore some case 
+
+grep -r "the word to search"
+//will give the used name
+
+grep -irc "the word to search"
+//will give the count and ignores the word and display the location of the file
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//history command
+the recent used commands will be displayed
+//work like a search history
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+//ssh keys
+
+ssh-keygen -t rsa -b 4096 -C "youremail@gmail.com"
+
+//to create a key 
+//it create a randomart
+ 
+eval "$(ssh-agent -s)"
+//converts the random art to a readables
+
+ssh-add ~/.ssh/id_rsa
+// to add id  
+
+cat ~/.ssh/id_rsa.pub
+//it will create the key 
+//go to the github and past the key and create the key
+//
+
+------------------------------
+java - version
+sudo apt install default-jre
+
+---------------------------------
+//
+//
+my sql
+.
+sudo apt-get update
+//for update 
+sudo apt install mysql-server
+
+.
+.
+sudo mysql_secur_installation utility
+/
+/
+sudo ufw enable 
+sudo ufw allow mysql
+sudo systecti restart mysql
+---------------------------------
+//
+install conda
+use the chmod..
+..
+conda activate//
+enviroinment
+//
+conda de activate..
+//
+------------------------------
+//
+sudo apt-get update
+//
+sudo apt install zsh
+.. 
+clone the repo of zsh
+..

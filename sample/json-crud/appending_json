@@ -1,0 +1,25 @@
+
+import json
+
+f = open("newfile.json","w")
+data = json.load(f)
+#print(data)
+
+dic = {
+    "name": "rathish",
+    "class": "a",
+    "dep": "IT"
+}
+
+# #update json file
+
+f1 = open("newfile.json","w")
+
+add_dep = {"dep": "mech"}
+
+
+data.update(add_dep)
+
+print(data)
+json.dump(data,f1)
+

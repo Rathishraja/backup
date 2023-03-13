@@ -1,0 +1,80 @@
+amazon web service
+.
+privacy and seurity
+.
+cloud service provider
+appplication devvelopement
+ar vr based applications
+
+.
+accessing the other computer..is cloud computing 
+.
+the virtual computer..
+.
+//
+.
+.
+.
+deploy the spring boot ec2..
+.
+//aws.amazon.com
+//
+IAM user
+.
+.
+//services
+..
+compute,ar vr, database , game developement..
+//
+ec2- elastic computing cloud..
+..
+get into the ec2
+.
+.
+launch the instant...
+click the instants zone...
+.
+//click on the launch instance..
+//AMI??..
+//amazon macpeshine image 
+//ebs elastic block storage
+//
+we can choose many instance with the same requirements
+/
+/
+//
+instance type..
+memory 1gib ... low to moderate network..
+.
+.
+Alarm status..>>acess by the owner alone..
+/
+/
+//s3 bucket
+To create an S3 bucket in AWS, you can follow these general steps:
+
+
+1>>Sign in to the AWS Management Console and navigate to the S3 dashboard.
+2>>Click the "Create bucket" button.
+3>>Choose a globally unique name for your bucket. The name should be unique across all existing S3 bucket names.
+4>>Choose a region where you want to create the bucket.
+5>>Choose the appropriate settings for your bucket, such as whether to enable versioning or server access logging.
+6>>Configure the bucket permissions, such as granting public access or access to specific AWS accounts or IAM users.
+7>>Review your settings and create the bucket.
+8>>After creating the bucket, you can upload, download, and manage files in the bucket using the S3 dashboard, AWS CLI, or AWS SDKs.
+
+It's important to note that S3 charges are based on the amount of data stored in the bucket, data transfer out of the bucket, 
+and other features enabled on the bucket, so be sure to monitor your usage and adjust your settings as needed to avoid unnecessary 
+charges. Additionally, it's a best practice to configure bucket permissions and encryption settings carefully to ensure that your 
+data is secure and only accessible to authorized users.
+
+//instances
+An instance is a virtual server in the AWS Cloud
+.
+.
+.
+//Stop and terminate instances
+..
+after user
+.
+.
